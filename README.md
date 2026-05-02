@@ -39,3 +39,49 @@ During the technical interview, your submission will be discussed, and you will 
 - Technical ability
 - Communication skills
 - Work habits and complementary skills
+
+
+Overview
+This implementation computes the n‑th prime number using a Sieve of Eratosthenes combined with an analytical upper‑bound estimate to size the sieve efficiently. The function uses 0‑based indexing, where:
+
+NthPrime(0) → 2
+
+NthPrime(1) → 3
+
+NthPrime(2) → 5
+
+Approach
+To avoid oversizing the sieve, the implementation uses the standard approximation for the n‑th prime:
+
+Code
+pₙ < n (ln n + ln ln n)
+This ensures the sieve is large enough to contain the n‑th prime without wasting memory.
+
+Algorithm steps:
+
+Convert the 0‑based index to 1‑based for the formula.
+
+Compute the upper‑bound estimate.
+
+Allocate a Uint8Array for efficient marking.
+
+Perform a standard Sieve of Eratosthenes.
+
+Count primes until the n‑th one is found.
+
+Complexity
+Time: O(N log log N)
+
+Space: O(N)
+
+Where N is the size of the sieve determined by the upper‑bound estimate.
+
+Testing
+The implementation passes the provided Jest test suite:
+
+Code
+npm install
+npm test
+File Location
+Code
+javascript/Sieve/sieve.js
