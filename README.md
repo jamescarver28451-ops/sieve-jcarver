@@ -54,27 +54,20 @@ This implementation computes the n‑th prime number using a Sieve of Eratosthen
 
 ### Approach
 
-To avoid oversizing the sieve, the implementation uses the standard approximation for the n‑th prime:
+To size the sieve, I use the standard upper‑bound estimate:
 
 pₙ < n (ln n + ln ln n)
 
+That gives a big enough range without wasting memory.
 
-This ensures the sieve is large enough to contain the n‑th prime without wasting memory.
-
-### Algorithm steps
-
-1. Convert the 0‑based index to 1‑based for the formula.  
-2. Compute the upper‑bound estimate.  
-3. Allocate a `Uint8Array` for efficient marking.  
-4. Perform a standard Sieve of Eratosthenes.  
-5. Count primes until the n‑th one is found.  
+The rest is the usual sieve process: mark non‑primes, collect primes, return the nth one.
 
 ### Complexity
 
 - **Time:** O(N log log N)  
 - **Space:** O(N)  
 
-Where **N** is the size of the sieve determined by the upper‑bound estimate.
+Where N is the size of the sieve based on the estimate above.
 
 ### Testing
 
