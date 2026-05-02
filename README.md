@@ -74,6 +74,7 @@ Perform a standard Sieve of Eratosthenes.
 Count primes until the n‑th one is found.
 
 Complexity
+
 Time: O(N log log N)
 
 Space: O(N)
@@ -81,11 +82,14 @@ Space: O(N)
 Where N is the size of the sieve determined by the upper‑bound estimate.
 
 Testing
+
 The implementation passes the provided Jest test suite:
 
 bash
 npm install
 npm test
+
 File Location
+
 Code
 javascript/Sieve/sieve.js
