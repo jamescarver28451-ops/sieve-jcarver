@@ -87,7 +87,6 @@ npm test
 File Location
 Code
 javascript/Sieve/sieve.js
-javascript/Sieve/sieve.js
 Code
 
 ---
