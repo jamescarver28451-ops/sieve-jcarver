@@ -88,5 +88,3 @@ File Location
 Code
 javascript/Sieve/sieve.js
 Code
-
----
