@@ -81,12 +81,12 @@ Where **N** is the size of the sieve determined by the upper‑bound estimate.
 
 The implementation passes the provided Jest test suite:
 
-```bash
-npm install
-npm test
-File Location
-Code
-javascript/Sieve/sieve.js
-Code
+- `npm install`
+- `npm test`
 
----
+### File Location
+
+`javascript/Sieve/sieve.js`
+
+
+
