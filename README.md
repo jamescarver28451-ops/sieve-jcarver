@@ -41,6 +41,7 @@ During the technical interview, your submission will be discussed, and you will 
 - Work habits and complementary skills
 
 
+JavaScript Solution — Nth Prime (Sieve of Eratosthenes)
 Overview
 This implementation computes the n‑th prime number using a Sieve of Eratosthenes combined with an analytical upper‑bound estimate to size the sieve efficiently. The function uses 0‑based indexing, where:
 
@@ -79,7 +80,7 @@ Where N is the size of the sieve determined by the upper‑bound estimate.
 Testing
 The implementation passes the provided Jest test suite:
 
-Code
+bash
 npm install
 npm test
 File Location
