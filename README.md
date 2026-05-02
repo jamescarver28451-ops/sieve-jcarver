@@ -41,7 +41,7 @@ During the technical interview, your submission will be discussed, and you will 
 - Work habits and complementary skills
 
 
-md
+
 ## JavaScript Solution — Nth Prime (Sieve of Eratosthenes)
 
 ### Overview
@@ -58,7 +58,6 @@ To avoid oversizing the sieve, the implementation uses the standard approximatio
 
 pₙ < n (ln n + ln ln n)
 
-Code
 
 This ensures the sieve is large enough to contain the n‑th prime without wasting memory.
 
